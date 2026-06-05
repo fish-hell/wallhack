@@ -3,6 +3,13 @@ plugins {
     id 'maven-publish'
 }
 
+pluginManagement {
+    repositories {
+        maven { url 'https://maven.fabricmc.net/' }
+        gradlePluginPortal()
+    }
+}
+
 version = '1.0.0'
 group = 'com.wallhack'
 
@@ -12,17 +19,7 @@ base {
 
 repositories {
     mavenCentral()
-}
-
-loom {
-    splitEnvironmentSourceSets()
-
-    mods {
-        wallhack {
-            sourceSet sourceSets.main
-            sourceSet sourceSets.client
-        }
-    }
+    maven { url 'https://maven.fabricmc.net/' }
 }
 
 dependencies {
