@@ -1,0 +1,22 @@
+{
+    "schemaVersion": 1,
+    "id": "wallhack",
+    "version": "1.0.0",
+    "name": "WallHack",
+    "description": "Mod permettant de voir les entites a travers les blocs. Appuyez sur ALT pour ouvrir le menu de configuration.",
+    "authors": ["WallHack"],
+    "contact": {},
+    "license": "MIT",
+    "environment": "client",
+    "entrypoints": {
+        "client": [
+            "com.wallhack.WallHackMod"
+        ]
+    },
+    "depends": {
+        "fabricloader": ">=0.19.3",
+        "minecraft": "*",
+        "java": ">=21",
+        "fabric-api": "*"
+    }
+}
