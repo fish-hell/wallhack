@@ -3,13 +3,6 @@ plugins {
     id 'maven-publish'
 }
 
-pluginManagement {
-    repositories {
-        maven { url 'https://maven.fabricmc.net/' }
-        gradlePluginPortal()
-    }
-}
-
 version = '1.0.0'
 group = 'com.wallhack'
 
