@@ -29,23 +29,9 @@ public class WallHackMod implements ClientModInitializer {
         WorldRenderEvents.AFTER_TRANSLUCENT.register(RenderHandler::onRenderLevel);
     }
 
-    public static WallHackMod getInstance() {
-        return instance;
-    }
-
-    public EntityConfig getEntityConfig() {
-        return entityConfig;
-    }
-
-    public boolean isWallhackEnabled() {
-        return wallhackEnabled;
-    }
-
-    public void setWallhackEnabled(boolean enabled) {
-        this.wallhackEnabled = enabled;
-    }
-
-    public void toggleWallhack() {
-        this.wallhackEnabled = !this.wallhackEnabled;
-    }
+    public static WallHackMod getInstance() { return instance; }
+    public EntityConfig getEntityConfig() { return entityConfig; }
+    public boolean isWallhackEnabled() { return wallhackEnabled; }
+    public void setWallhackEnabled(boolean enabled) { this.wallhackEnabled = enabled; }
+    public void toggleWallhack() { this.wallhackEnabled = !this.wallhackEnabled; }
 }
