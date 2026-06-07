@@ -3,19 +3,16 @@
     "id": "wallhack",
     "version": "1.0.0",
     "name": "WallHack",
-    "description": "Mod permettant de voir les entites a travers les blocs. Appuyez sur ALT pour ouvrir le menu de configuration.",
+    "description": "See entities through walls. ALT to open menu, V to toggle.",
     "authors": ["WallHack"],
-    "contact": {},
     "license": "MIT",
     "environment": "client",
     "entrypoints": {
-        "client": [
-            "com.wallhack.WallHackMod"
-        ]
+        "client": ["com.wallhack.WallHackMod"]
     },
     "depends": {
         "fabricloader": ">=0.19.3",
-        "minecraft": "*",
+        "minecraft": "~26.1",
         "java": ">=21",
         "fabric-api": "*"
     }
