@@ -10,7 +10,8 @@ jobs:
           java-version: '25'
           distribution: 'microsoft'
       - uses: gradle/actions/setup-gradle@v4
-      - run: gradle wrapper --gradle-version 9.5.1
+        with:
+          gradle-version: '9.5.1'
       - run: ./gradlew build
       - uses: actions/upload-artifact@v4
         with:
